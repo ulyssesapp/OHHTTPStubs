@@ -12,7 +12,7 @@
 		09110A4519805F4800D175E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09110A4419805F4800D175E4 /* Foundation.framework */; };
 		09110A5319805F4800D175E4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09110A5219805F4800D175E4 /* XCTest.framework */; };
 		09110A5419805F4800D175E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09110A4419805F4800D175E4 /* Foundation.framework */; };
-		09110A5919805F4800D175E4 /* libOHHTTPStubs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09110A4119805F4800D175E4 /* libOHHTTPStubs.a */; };
+		09110A5919805F4800D175E4 /* libOHHTTPStubs-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09110A4119805F4800D175E4 /* libOHHTTPStubs-iOS.a */; };
 		09110A6C1980605A00D175E4 /* OHHTTPStubs.m in Sources */ = {isa = PBXBuildFile; fileRef = 09110A6B1980605A00D175E4 /* OHHTTPStubs.m */; };
 		09110A741980606A00D175E4 /* OHHTTPStubsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09110A6F1980606A00D175E4 /* OHHTTPStubsResponse.m */; };
 		09110A751980606A00D175E4 /* OHHTTPStubsResponse+HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 09110A711980606A00D175E4 /* OHHTTPStubsResponse+HTTPMessage.m */; };
@@ -221,7 +221,7 @@
 
 /* Begin PBXFileReference section */
 		070E9B74647A6F3AE67C97A7 /* Pods-TestingPods-OHHTTPStubs Mac Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingPods-OHHTTPStubs Mac Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestingPods-OHHTTPStubs Mac Tests/Pods-TestingPods-OHHTTPStubs Mac Tests.release.xcconfig"; sourceTree = "<group>"; };
-		09110A4119805F4800D175E4 /* libOHHTTPStubs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOHHTTPStubs.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		09110A4119805F4800D175E4 /* libOHHTTPStubs-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libOHHTTPStubs-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09110A4419805F4800D175E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		09110A5119805F4800D175E4 /* OHHTTPStubs iOS Lib Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OHHTTPStubs iOS Lib Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09110A5219805F4800D175E4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -305,7 +305,7 @@
 			files = (
 				09110A5319805F4800D175E4 /* XCTest.framework in Frameworks */,
 				09110A5419805F4800D175E4 /* Foundation.framework in Frameworks */,
-				09110A5919805F4800D175E4 /* libOHHTTPStubs.a in Frameworks */,
+				09110A5919805F4800D175E4 /* libOHHTTPStubs-iOS.a in Frameworks */,
 				0A17E6601EBA2C3238103F9C /* libPods-TestingPods-OHHTTPStubs iOS Lib Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,7 +380,7 @@
 		09110A4219805F4800D175E4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				09110A4119805F4800D175E4 /* libOHHTTPStubs.a */,
+				09110A4119805F4800D175E4 /* libOHHTTPStubs-iOS.a */,
 				09110A5119805F4800D175E4 /* OHHTTPStubs iOS Lib Tests.xctest */,
 				095981C219806A7900807DBE /* OHHTTPStubs.framework */,
 				095981D219806A7900807DBE /* OHHTTPStubs Mac Tests.xctest */,
@@ -656,7 +656,7 @@
 			);
 			name = "OHHTTPStubs iOS StaticLib";
 			productName = OHHTTPStubs;
-			productReference = 09110A4119805F4800D175E4 /* libOHHTTPStubs.a */;
+			productReference = 09110A4119805F4800D175E4 /* libOHHTTPStubs-iOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		09110A5019805F4800D175E4 /* OHHTTPStubs iOS Lib Tests */ = {
@@ -1397,7 +1397,7 @@
 				DSTROOT = /tmp/OHHTTPStubs.dst;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = OHHTTPStubs;
+				PRODUCT_NAME = "OHHTTPStubs-iOS";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1408,7 +1408,7 @@
 				DSTROOT = /tmp/OHHTTPStubs.dst;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = OHHTTPStubs;
+				PRODUCT_NAME = "OHHTTPStubs-iOS";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
